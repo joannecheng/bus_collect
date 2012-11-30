@@ -21,4 +21,6 @@ current_snapshot = all_buses.map do |bus|
   Septa::Bus.new(bus).bus_locations
 end.flatten.compact
 
-puts current_snapshot
+f = File.new("data/#{Time.now.to_i}.txt", "w")
+f.write current_snapshot
+f.close
