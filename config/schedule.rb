@@ -20,5 +20,5 @@
 # Learn more: http://github.com/javan/whenever
 #
 every 1.minute do
-  command "./collect_routes.rb"
+  command "/Users/joannecheng/dev/bus_collect/./collect_routes.rb"
 end
